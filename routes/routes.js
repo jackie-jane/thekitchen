@@ -2,10 +2,10 @@ const controllers = require('../controllers/controllers')
 
 const router = Router()
 
-router.get('/blogs', controllers.getBlogs)
-router.get('/blogs/:id', controllers.getBlog)
-router.post('/blogs', controllers.createBlog)
-router.put('/blogs/:id', controllers.updateBlog)
-router.delete('/blogs/:id', controllers.deleteBlog)
+router.get('/all', controllers.getAll)
+router.get('/art/:id', controllers.getOne)
+router.post('/all', controllers.createArt)
+router.put('/art/:id', controllers.updateArt)
+router.delete('/art/:id', controllers.deleteArt)
 
 module.exports = router
